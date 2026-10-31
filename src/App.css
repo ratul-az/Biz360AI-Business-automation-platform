@@ -1,0 +1,232 @@
+/* ==========================
+   GLOBAL SETTINGS
+========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100vh;
+  background: #171717;
+  color: white;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* ==========================
+   SCROLLBAR
+========================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #171717;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3f3f46;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8b5cf6;
+}
+
+/* ==========================
+   LINKS
+========================== */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ==========================
+   LAYOUT
+========================== */
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background: #171717;
+}
+
+.content {
+  flex: 1;
+  min-height: 100vh;
+  background: #171717;
+}
+
+/* ==========================
+   INPUTS
+========================== */
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid #2f3136;
+  background: #202123;
+  color: white;
+  outline: none;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.2);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #9ca3af;
+}
+
+select {
+  cursor: pointer;
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+button {
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* ==========================
+   TABLES
+========================== */
+
+table {
+  width: 100%;
+}
+
+th {
+  color: #9ca3af;
+  font-weight: 600;
+  padding: 15px;
+}
+
+td {
+  color: white;
+  padding: 15px;
+}
+
+/* ==========================
+   HEADINGS
+========================== */
+
+h1,
+h2,
+h3,
+h4 {
+  color: white;
+}
+
+p {
+  color: #d1d5db;
+}
+
+/* ==========================
+   CARDS
+========================== */
+
+.card {
+  background: #202123;
+  border: 1px solid #2f3136;
+  border-radius: 20px;
+  padding: 25px;
+}
+
+/* ==========================
+   GRID
+========================== */
+
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+/* ==========================
+   BADGES
+========================== */
+
+.badge-success {
+  background: rgba(16, 163, 127, 0.15);
+  color: #10a37f;
+  padding: 6px 12px;
+  border-radius: 10px;
+}
+
+.badge-purple {
+  background: rgba(139, 92, 246, 0.15);
+  color: #8b5cf6;
+  padding: 6px 12px;
+  border-radius: 10px;
+}
+
+.badge-warning {
+  background: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+  padding: 6px 12px;
+  border-radius: 10px;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width: 1200px) {
+  .layout {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+
+  input,
+  select,
+  textarea {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 28px !important;
+  }
+
+  h2 {
+    font-size: 22px !important;
+  }
+
+  h3 {
+    font-size: 18px !important;
+  }
+}
